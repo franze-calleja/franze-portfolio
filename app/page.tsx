@@ -11,37 +11,27 @@ import { Contact } from "lucide-react";
 export default function Home() {
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen transition-colors duration-1000 ease-in-out"
       style={{
         background: `linear-gradient(
-          to bottom right,
-           #161E2F,
-           #242F49,
-           #384358,
-   
-           #B51A2B,
-           #541A21
-        )`,
+      to bottom right,
+       #161E2F,
+       #242F49,
+       #384358,
+       #B51A2B,
+       #541A21
+    )`,
       }}
     >
-      {/* Navbar component can be added here */}
       <NavBar />
       <main className="pt-5 px-5">
-        {/* Hero Section */}
         <Hero />
-
         <AboutMe />
-
         <Skills />
-
         <Projects />
-
         <Experience />
-
         <Education />
-
         <Contact />
-
         <Footer />
       </main>
     </div>
