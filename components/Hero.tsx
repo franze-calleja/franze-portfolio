@@ -37,7 +37,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center px-4"
     >
-      <div className="flex flex-col lg:flex-row items-center gap-20 text-white">
+      <div className="flex flex-col lg:flex-row items-center gap-x-40 text-white">
         {/* Text info */}
         <div className="text-start flex-1">
           <p className="text-xl">Hi, I'm</p>
