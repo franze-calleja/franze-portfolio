@@ -31,29 +31,29 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-50 right-50  rounded-4xl z-50  transition-all duration-500 hover:rounded-3xl hover:shadow-3xl hover:border-white/30 ${
+      className={`fixed top-2 sm:top-4 left-2 right-2 sm:left-4 sm:right-4 lg:left-8 lg:right-8 xl:left-16 xl:right-16 rounded-2xl sm:rounded-3xl z-50 transition-all duration-500 hover:shadow-lg hover:border-white/30 ${
         isScrolled
-          ? "bg-white/10 backdrop-blur-xl"
-          : "bg-transparent backdrop-blur-none"
+          ? "bg-white/10 backdrop-blur-xl border border-white/20"
+          : "bg-transparent backdrop-blur-none border border-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo/Name */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white drop-shadow-lg hover:text-blue-300 transition-all duration-300">
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white drop-shadow-lg hover:text-blue-300 transition-all duration-300">
               Franze.
             </h1>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden lg:block">
+            <div className="flex items-baseline space-x-4 xl:space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white/90 hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 relative group"
+                  className="text-white/90 hover:text-white px-3 xl:px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 relative group"
                 >
                   {item.name}
                   <span className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-white/80 transition-all duration-300 group-hover:w-8 rounded-full"></span>
@@ -63,20 +63,20 @@ const NavBar = () => {
           </div>
 
           {/* Desktop CTA Button */}
-          <div className="hidden md:block">
-            <button className="text-white border border-white/30 hover:border-white/50 px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2">
+          <div className="hidden lg:block">
+            <button className="text-white border border-white/30 hover:border-white/50 px-4 xl:px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2">
               <Download size={16} />
               <span>Resume</span>
             </button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-white/90 hover:text-white focus:outline-none transition-all duration-300 rounded-full p-2"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
@@ -84,31 +84,31 @@ const NavBar = () => {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out ${
+        className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "max-h-96 opacity-100 visible"
             : "max-h-0 opacity-0 invisible"
         } overflow-hidden`}
       >
         <div
-          className={`px-4 pt-4 pb-4 space-y-2  rounded-b-2xl transition-all duration-300 ${
+          className={`px-3 sm:px-4 pt-2 pb-4 space-y-1 rounded-b-2xl transition-all duration-300 ${
             isScrolled
-              ? "bg-white/10 backdrop-blur-xl"
-              : "bg-transparent backdrop-blur-none"
+              ? "bg-white/10 backdrop-blur-xl border-t border-white/10"
+              : "bg-white/5 backdrop-blur-sm border-t border-white/5"
           }`}
         >
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-white/90 hover:text-white block px-4 py-3 text-base font-medium transition-all duration-300 rounded-xl"
+              className="text-white/90 hover:text-white hover:bg-white/10 block px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium transition-all duration-300 rounded-xl"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
             </a>
           ))}
-          <div className="px-2 py-3">
-            <button className="w-full text-white border border-white/30 hover:border-white/50 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
+          <div className="px-1 sm:px-2 pt-2">
+            <button className="w-full text-white border border-white/30 hover:border-white/50 hover:bg-white/10 px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
               <Download size={16} />
               <span>Resume</span>
             </button>

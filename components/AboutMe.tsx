@@ -6,22 +6,24 @@ const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="min-h-screen flex items-center justify-center px-4"
+      className="min-h-screen flex items-center justify-center px-4 py-8"
     >
-      <div className="text-center text-white max-w-7xl">
-        <h2 className="text-5xl font-bold mb-6">Who am I?</h2>
-        <div className="flex h-[35rem] w-full max-w-[70rem] rounded-2xl border-2 border-[#f1bdab] items-center justify-center overflow-hidden">
+      <div className="text-center text-white max-w-7xl w-full">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+          Who am I?
+        </h2>
+        <div className="flex h-[25rem] sm:h-[30rem] lg:h-[35rem] w-full max-w-[90vw] sm:max-w-[70rem] mx-auto rounded-2xl border-2 border-[#f1bdab] items-center justify-center overflow-hidden">
           <MaskContainer
             revealText={
-              <p className="mx-auto max-w-7xl text-center text-3xl p-3 font-bold text-white dark:text-white">
+              <p className="mx-auto max-w-7xl text-center text-lg sm:text-xl lg:text-3xl p-3 font-bold text-white dark:text-white px-4">
                 Uh... I'm not sure if I should talk about this... <br />
                 Maybe you can look closer?
               </p>
             }
-            className="h-[40rem] w-[80rem] text-black dark:text-black" // 👈 added width
+            className="h-[25rem] sm:h-[30rem] lg:h-[40rem] w-full max-w-[90vw] sm:max-w-[80rem] text-black dark:text-black"
           >
-            <div className="max-w-8xl">
-              <p className="text-3xl">
+            <div className="max-w-8xl px-4 sm:px-6">
+              <p className="text-base sm:text-xl lg:text-3xl leading-relaxed">
                 I'm a{" "}
                 <span className="text-blue-400 font-semibold">
                   full-stack developer
@@ -29,7 +31,7 @@ const AboutMe = () => {
                 and computer science graduate passionate about building modern,
                 impactful software.
               </p>
-              <p className="text-3xl mt-4">
+              <p className="text-base sm:text-xl lg:text-3xl mt-2 sm:mt-4 leading-relaxed">
                 With skills in{" "}
                 <span className="text-green-400 font-semibold">Next.js</span>,
                 <span className="text-purple-400 font-semibold"> React</span>,
@@ -37,7 +39,7 @@ const AboutMe = () => {
                 <span className="text-red-400 font-semibold"> Laravel</span>, I
                 focus on creating scalable, user-focused solutions.
               </p>
-              <p className="text-3xl mt-4">
+              <p className="text-base sm:text-xl lg:text-3xl mt-2 sm:mt-4 leading-relaxed">
                 Beyond coding, I love exploring new tech and pushing what's
                 possible.
               </p>
