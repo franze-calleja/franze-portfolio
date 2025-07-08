@@ -121,3 +121,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bento-gradient {
+  background: linear-gradient(135deg,
+      #161E2F,
+      #242F49,
+      #384358,
+
+      #B51A2B,
+      #541A21);
+}
