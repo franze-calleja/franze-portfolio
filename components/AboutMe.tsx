@@ -22,7 +22,7 @@ const AboutMe = () => {
           <MaskContainer
             revealText={
               <p className="mx-auto max-w-7xl text-center text-lg sm:text-xl lg:text-3xl p-3 font-bold text-white dark:text-white px-4">
-                Uh... I'm not sure if I should talk about this... <br />
+                Uh... I&apos;m not sure if I should talk about this... <br />
                 Maybe you can look closer?
               </p>
             }
@@ -89,7 +89,7 @@ const AboutMe = () => {
 
         {/* <div className="max-w-7xl mx-auto">
           <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-            I'm a passionate{" "}
+            Im a passionate{" "}
             <span className="text-blue-400 font-semibold">
               Full-Stack Developer
             </span>{" "}
@@ -119,9 +119,9 @@ const AboutMe = () => {
               Freelance Software Developer
             </span>
             , I specialize in web development, project management, and creating
-            user-centric solutions. When I'm not coding, you'll find me
+            user-centric solutions. When Im not coding, youll find me
             exploring new technologies, solving complex problems, or working on
-            innovative projects that push the boundaries of what's possible.
+            innovative projects that push the boundaries of whats possible.
           </p>
         </div> */}
       </div>

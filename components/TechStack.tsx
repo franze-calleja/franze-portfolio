@@ -89,8 +89,8 @@ const TechStack = () => {
             Tools, Languages & Frameworks I Work With
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Here's a look at the technologies I use to build scalable, modern,
-            and impactful software solutions.
+            Here&apos;s a look at the technologies I use to build scalable,
+            modern, and impactful software solutions.
           </p>
         </div>
         <div>

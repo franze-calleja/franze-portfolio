@@ -6,6 +6,7 @@ import { Github, Linkedin, Facebook } from "lucide-react";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { FlipWords } from "@/components/ui/flip-words";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import Image from "next/image";
 
 const name = [
   {
@@ -42,7 +43,7 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-x-40 text-white max-w-7xl w-full">
         {/* Text info */}
         <div className="text-center lg:text-start flex-1 order-1 lg:order-1">
-          <p className="text-lg sm:text-xl">Hi, I'm</p>
+          <p className="text-lg sm:text-xl">Hi, I&apos;m</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-1">
             <TypewriterEffectSmooth words={name} />
           </h1>
@@ -86,7 +87,7 @@ const Hero = () => {
         {/* Responsive GlareCard */}
         <div className="flex-1 w-full max-w-md sm:max-w-lg lg:max-w-5xl order-2 lg:order-2">
           <GlareCard className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:min-h-[600px]">
-            <img
+            <Image
               className="h-full w-full absolute inset-0 object-cover rounded-xl"
               src="/images/ako.jpg"
               alt="Hero image"

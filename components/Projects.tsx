@@ -2,7 +2,6 @@
 
 import React from "react";
 import Carousel from "@/components/ui/carousel";
-import { desc } from "motion/react-client";
 
 const Projects = () => {
   const slideData = [
@@ -56,8 +55,8 @@ const Projects = () => {
             Crafted with Code: My Project Highlights
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Explore a collection of projects I've passionately crafted — from
-            business-grade systems to creative studio websites. Each one
+            Explore a collection of projects I&apos;ve passionately crafted —
+            from business-grade systems to creative studio websites. Each one
             showcases my ability to design, build, and deliver modern software
             solutions tailored to real-world needs.
           </p>

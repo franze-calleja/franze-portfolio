@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="text-center text-white">
         <h2 className="text-4xl font-bold mb-6">Contact</h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Let's connect and work together!
+          Let&apos;s connect and work together!
         </p>
       </div>
     </section>

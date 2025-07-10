@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import Image from "next/image";
 
 const Experience = () => {
   const data = [
@@ -14,19 +15,25 @@ const Experience = () => {
             balancing academics.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
+            <Image
               src="/projects/nfc-attendance.png"
               alt="NFC Attendance System"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/projects/opd-management.png"
               alt="OPD Management System"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/projects/payroll-management.png"
               alt="Payroll Management System"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
           </div>
@@ -44,24 +51,32 @@ const Experience = () => {
             throughout college.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
+            <Image
               src="/timeline/graduate.JPG"
-              alt="graduation1"
+              alt="Graduation"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/timeline/graduate2.JPG"
-              alt="graduation1"
+              alt="Graduation"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/timeline/graduate3.JPG"
-              alt="graduation1"
+              alt="Graduation"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/timeline/graduate4.JPG"
-              alt="graduation1"
+              alt="Graduation"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
           </div>
@@ -80,25 +95,32 @@ const Experience = () => {
             projects.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
+            <Image
               src="/timeline/ellipsense.jpg"
               alt="Ellipsense"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/projects/ellipsense-web.png"
               alt="Ellipsense Web Profile"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-
-            <img
+            <Image
               src="/projects/sikatna.png"
               alt="Sikatna LMS"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
-            <img
+            <Image
               src="/projects/nocturnes-studio.png"
               alt="Nocturnes Studio"
+              width={500}
+              height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
           </div>

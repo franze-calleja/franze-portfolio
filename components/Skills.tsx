@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";

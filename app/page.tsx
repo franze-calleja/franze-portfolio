@@ -1,5 +1,5 @@
 import AboutMe from "@/components/AboutMe";
-import Education from "@/components/Education";
+// import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
