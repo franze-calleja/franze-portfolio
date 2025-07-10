@@ -22,26 +22,60 @@ const AboutMe = () => {
             }
             className="h-[25rem] sm:h-[30rem] lg:h-[40rem] w-full max-w-[90vw] sm:max-w-[80rem] text-black dark:text-black"
           >
-            <div className="max-w-8xl px-4 sm:px-6">
-              <p className="text-base sm:text-xl lg:text-3xl leading-relaxed">
-                I'm a{" "}
-                <span className="text-blue-400 font-semibold">
-                  full-stack developer
+            <div className="max-w-8xl px-2 sm:px-4">
+              <p className="text-base sm:text-xl lg:text-2xl leading-relaxed">
+                I am a dedicated{" "}
+                <span className="text-blue-500 font-semibold">
+                  Software Developer
                 </span>{" "}
-                and computer science graduate passionate about building modern,
-                impactful software.
-              </p>
-              <p className="text-base sm:text-xl lg:text-3xl mt-2 sm:mt-4 leading-relaxed">
-                With skills in{" "}
-                <span className="text-green-400 font-semibold">Next.js</span>,
-                <span className="text-purple-400 font-semibold"> React</span>,
+                with a strong foundation in
+                <span className="text-blue-500 font-semibold">
+                  {" "}
+                  full-stack
+                </span>{" "}
                 and
-                <span className="text-red-400 font-semibold"> Laravel</span>, I
-                focus on creating scalable, user-focused solutions.
+                <span className="text-blue-500 font-semibold">
+                  {" "}
+                  web development
+                </span>
+                .
               </p>
-              <p className="text-base sm:text-xl lg:text-3xl mt-2 sm:mt-4 leading-relaxed">
-                Beyond coding, I love exploring new tech and pushing what's
-                possible.
+              <p className="text-base sm:text-xl lg:text-2xl mt-2 sm:mt-4 leading-relaxed">
+                My expertise includes modern frameworks such as
+                <span className="text-green-500 font-semibold"> Next.js</span>,
+                <span className="text-purple-500 font-semibold"> React</span>,
+                <span className="text-red-500 font-semibold"> Express.js</span>,
+                <span className="text-yellow-500 font-semibold"> Angular</span>,
+                and
+                <span className="text-indigo-500 font-semibold"> ASP.NET</span>.
+                I am also proficient in version control using
+                <span className="text-pink-500 font-semibold"> Git</span> and
+                <span className="text-pink-500 font-semibold"> GitHub</span>,
+                and familiar with containerization using
+                <span className="text-cyan-500 font-semibold"> Docker</span>.
+              </p>
+              <p className="text-base sm:text-xl lg:text-2xl mt-2 sm:mt-4 leading-relaxed">
+                I am passionate about building
+                <span className="text-orange-500 font-semibold">
+                  {" "}
+                  impactful software solutions
+                </span>{" "}
+                and continuously strive to deliver
+                <span className="text-orange-500 font-semibold">
+                  {" "}
+                  high-quality
+                </span>
+                ,
+                <span className="text-orange-500 font-semibold">
+                  {" "}
+                  efficient
+                </span>
+                , and
+                <span className="text-orange-500 font-semibold">
+                  {" "}
+                  user-focused applications
+                </span>
+                .
               </p>
             </div>
           </MaskContainer>
