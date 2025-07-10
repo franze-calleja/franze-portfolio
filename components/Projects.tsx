@@ -55,6 +55,13 @@ const Projects = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">
             Crafted with Code: My Project Highlights
           </h2>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            Explore a collection of projects I've passionately crafted — from
+            business-grade systems to creative studio websites. Each one
+            showcases my ability to design, build, and deliver modern software
+            solutions tailored to real-world needs.
+          </p>
+
           <Carousel slides={slideData} />
         </div>
       </div>

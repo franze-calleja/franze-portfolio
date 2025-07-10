@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { MaskContainer } from "@/components/ui/svg-mask-effect";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 const AboutMe = () => {
   return (
@@ -9,9 +10,14 @@ const AboutMe = () => {
       className="min-h-screen flex items-center justify-center px-4 py-8"
     >
       <div className="text-center text-white max-w-7xl w-full">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-          Who am I?
-        </h2>
+        <div className="w-full flex justify-center  mb-6 sm:mb-8">
+          <PointerHighlight>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
+              Who am I?
+            </h2>
+          </PointerHighlight>
+        </div>
+
         <div className="flex h-[25rem] sm:h-[30rem] lg:h-[35rem] w-full max-w-[90vw] sm:max-w-[70rem] mx-auto rounded-2xl border-2 border-[#f1bdab] items-center justify-center overflow-hidden">
           <MaskContainer
             revealText={

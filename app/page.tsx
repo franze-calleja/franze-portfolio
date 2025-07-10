@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import TechStack from "@/components/TechStack";
 import { Contact } from "lucide-react";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <main className="pt-5 px-5">
         <Hero />
         <AboutMe />
+        <TechStack />
         <Skills />
         <Projects />
         <Experience />

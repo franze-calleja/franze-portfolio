@@ -152,11 +152,18 @@ const Skills = () => {
       id="skills"
       className="min-h-screen flex items-center justify-center px-4 py-8"
     >
-      <div className="text-center text-white max-w-7xl w-full">
+      <div className="text-center text-white max-w-7xl w-full ">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
           What I Can Do
         </h2>
-        <BentoGrid className="max-w-[70rem] mx-auto">
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          I specialize in crafting scalable applications, managing databases,
+          leading projects, and maintaining quality through testing and version
+          control. My skill set spans both frontend and backend, enabling me to
+          deliver end-to-end solutions.
+        </p>
+
+        <BentoGrid className="max-w-[70rem] mx-auto mt-10">
           {items.map((item, i) => (
             <BentoGridItem
               key={i}
