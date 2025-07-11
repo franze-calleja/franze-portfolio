@@ -60,7 +60,7 @@ const Hero = () => {
           {/* Minimalistic social buttons */}
           <div className="flex gap-4 justify-center lg:justify-start mb-8 lg:mb-0">
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/franze-calleja"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 border border-gray-600 rounded-2xl hover:bg-gray-700 transition"
@@ -68,7 +68,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="www.linkedin.com/in/calleja-franze-william-m-b93736258"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 border border-gray-600 rounded-2xl hover:bg-gray-700 transition"
@@ -76,7 +76,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://facebook.com/your-facebook"
+              href="https://www.facebook.com/franze.calleja.1"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 border border-gray-600 rounded-2xl hover:bg-gray-700 transition"
