@@ -44,9 +44,11 @@ const Hero = () => {
         {/* Text info */}
         <div className="text-center lg:text-start flex-1 order-1 lg:order-1">
           <p className="text-lg sm:text-xl">Hi, I&apos;m</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-1">
-            <TypewriterEffectSmooth words={name} />
-          </h1>
+          <div className="flex justify-center lg:justify-start mb-1">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold">
+              <TypewriterEffectSmooth words={name} />
+            </h1>
+          </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-1">
             <FlipWords words={profession} />
           </h2>
