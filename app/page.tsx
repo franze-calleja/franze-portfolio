@@ -12,17 +12,17 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <div
-      className="min-h-screen transition-colors duration-1000 ease-in-out"
-      style={{
-        background: `linear-gradient(
-      to bottom right,
-       #161E2F,
-       #242F49,
-       #384358,
-       #B51A2B,
-       #541A21
-    )`,
-      }}
+      className="min-h-screen transition-colors duration-1000 ease-in-out bg-neutral-900"
+      //   style={{
+      //     background: `linear-gradient(
+      //   to bottom right,
+      //    #161E2F,
+      //    #242F49,
+      //    #384358,
+      //    #B51A2B,
+      //    #541A21
+      // )`,
+      //   }}
     >
       <NavBar />
       <main className="pt-5 px-5">
