@@ -64,20 +64,30 @@ const NavBar = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden lg:block">
-            <button className="text-white border border-white/30 hover:border-white/50 px-4 xl:px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2">
+            <a
+              href="/calleja-cv.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white border border-white/30 hover:border-white/50 px-4 xl:px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2"
+            >
               <Download size={16} />
               <span>Resume</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-white/90 hover:text-white focus:outline-none transition-all duration-300 rounded-full p-2"
+            <a
+              href="/calleja-cv.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-white border border-white/30 hover:border-white/50 hover:bg-white/10 px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
             >
-              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
+              <Download size={16} />
+              <span>Resume</span>
+            </a>
           </div>
         </div>
       </div>
