@@ -84,9 +84,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Responsive GlareCard */}
-        <div className="flex-1 w-full max-w-md sm:max-w-lg lg:max-w-5xl order-2 lg:order-2">
-          <GlareCard className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:min-h-[600px]">
+        {/* Responsive GlareCard Container */}
+        <div className="flex-1 flex justify-center w-full max-w-sm sm:max-w-md lg:max-w-lg order-2 lg:order-2">
+          <GlareCard>
             <Image
               className="h-full w-full absolute inset-0 object-cover rounded-xl"
               src="/images/ako.jpg"

@@ -24,6 +24,7 @@ export const GlareCard = ({
       y: 0,
     },
   });
+
   const containerStyle = {
     "--m-x": "50%",
     "--m-y": "50%",
@@ -34,7 +35,7 @@ export const GlareCard = ({
     "--duration": "300ms",
     "--foil-size": "100%",
     "--opacity": "0",
-    "--radius": "48px",
+    "--radius": "clamp(16px, 4vw, 48px)",
     "--easing": "ease",
     "--transition": "var(--duration) var(--easing)",
   } as React.CSSProperties;
@@ -54,7 +55,6 @@ export const GlareCard = ({
 
   const updateStyles = () => {
     if (refElement.current) {
-      console.log(state.current);
       const { background, rotate, glare } = state.current;
       refElement.current?.style.setProperty("--m-x", `${glare.x}%`);
       refElement.current?.style.setProperty("--m-y", `${glare.y}%`);
@@ -64,39 +64,53 @@ export const GlareCard = ({
       refElement.current?.style.setProperty("--bg-y", `${background.y}%`);
     }
   };
+
+  const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    // Reduce rotation factor on mobile for better UX
+    const isMobile = window.innerWidth < 768;
+    const rotateFactor = isMobile ? 0.2 : 0.4;
+
+    const rect = event.currentTarget.getBoundingClientRect();
+    const position = {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    };
+    const percentage = {
+      x: (100 / rect.width) * position.x,
+      y: (100 / rect.height) * position.y,
+    };
+    const delta = {
+      x: percentage.x - 50,
+      y: percentage.y - 50,
+    };
+
+    const { background, rotate, glare } = state.current;
+    background.x = 50 + percentage.x / 4 - 12.5;
+    background.y = 50 + percentage.y / 3 - 16.67;
+    rotate.x = -(delta.x / 3.5);
+    rotate.y = delta.y / 2;
+    rotate.x *= rotateFactor;
+    rotate.y *= rotateFactor;
+    glare.x = percentage.x;
+    glare.y = percentage.y;
+
+    updateStyles();
+  };
+
   return (
     <div
       style={containerStyle}
-      className="relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[320px] [aspect-ratio:17/21]"
+      className={cn(
+        "relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform",
+        // Responsive sizing - Made bigger
+        "w-full max-w-[400px] mx-auto", // Increased from 320px to 400px
+        "min-w-[280px]", // Increased minimum width from 240px to 280px
+        "[aspect-ratio:4/5]", // Changed from 17/21 to 4/5 for better proportions
+        // Mobile-specific adjustments
+        "sm:max-w-[450px] md:max-w-[500px] lg:max-w-[550px] sm:mx-0" // Progressive sizing
+      )}
       ref={refElement}
-      onPointerMove={(event) => {
-        const rotateFactor = 0.4;
-        const rect = event.currentTarget.getBoundingClientRect();
-        const position = {
-          x: event.clientX - rect.left,
-          y: event.clientY - rect.top,
-        };
-        const percentage = {
-          x: (100 / rect.width) * position.x,
-          y: (100 / rect.height) * position.y,
-        };
-        const delta = {
-          x: percentage.x - 50,
-          y: percentage.y - 50,
-        };
-
-        const { background, rotate, glare } = state.current;
-        background.x = 50 + percentage.x / 4 - 12.5;
-        background.y = 50 + percentage.y / 3 - 16.67;
-        rotate.x = -(delta.x / 3.5);
-        rotate.y = delta.y / 2;
-        rotate.x *= rotateFactor;
-        rotate.y *= rotateFactor;
-        glare.x = percentage.x;
-        glare.y = percentage.y;
-
-        updateStyles();
-      }}
+      onPointerMove={handlePointerMove}
       onPointerEnter={() => {
         isPointerInside.current = true;
         if (refElement.current) {
