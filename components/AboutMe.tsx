@@ -23,7 +23,7 @@ const AboutMe = () => {
             revealText={
               <p className="mx-auto max-w-7xl text-center text-lg sm:text-xl lg:text-3xl p-3 font-bold text-white dark:text-white px-4">
                 Uh... I&apos;m not sure if I should talk about this... <br />
-                Maybe you can look closer?
+                Maybe you can look closer???
               </p>
             }
             className="h-[25rem] sm:h-[30rem] lg:h-[40rem] w-full max-w-[90vw] sm:max-w-[80rem] text-black dark:text-black"
