@@ -9,10 +9,9 @@ const Experience = () => {
       content: (
         <div>
           <p className="mb-8 text-sm font-normal text-neutral-200">
-            During my 3rd and 4th year in college, I worked as a freelance
-            software developer. I built several simple websites and medium-scale
-            systems, gaining experience in real-world client projects while
-            balancing academics.
+            During my 3rd year in college, I worked as a freelance software
+            developer. I contributed to various client projects while studying,
+            gaining real-world experience.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -29,6 +28,20 @@ const Experience = () => {
               height={300}
               className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
             />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2025 (Internship)",
+      content: (
+        <div>
+          <p className="mb-8 text-sm font-normal text-neutral-200">
+            I joined Linoflap Technologies Inc. as a Software Developer Intern
+            where I worked on production-level systems, including a
+            comprehensive payroll management system.
+          </p>
+          <div className="grid grid-cols-1 gap-4">
             <Image
               src="/projects/payroll-management.png"
               alt="Payroll Management System"
@@ -84,7 +97,7 @@ const Experience = () => {
       ),
     },
     {
-      title: "2025 - now",
+      title: "2025 – Now",
       content: (
         <div>
           <p className="mb-8 text-sm font-normal text-neutral-200">
