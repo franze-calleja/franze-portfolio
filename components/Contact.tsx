@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <footer
       id="contact"
-      className="bg-slate-900 border-t border-slate-800 py-8 w-full"
+      className="bg-slate-950 border-t border-slate-800 py-8 w-full"
     >
       <div className="max-w-4xl mx-auto">
         {/* Main Content */}
